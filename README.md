@@ -1,4 +1,4 @@
-# 🧩 Título: Sistema POO de Modelado de Entidades Audiovisuales
+# 🧩 Deber de POO Unidad 2
 
 ## 1. ⚙️ Metodología y Objetivos de Ingeniería
 
@@ -22,26 +22,26 @@ El código fuente del proyecto se organiza en paquetes lógicos para facilitar l
 
 El proyecto mantiene una estructura clara para el desarrollo en IDEs basados en Maven/Gradle (o Eclipse):
 
-\`\`\`
 Poo_unidad1/
-├── .gitignore
-├── README.md
+├── .gitignore/
+├── README.md/
 └── src/
+
     ├── poo/
     │   └── PruebaAudioVisual.java (Driver de Ejecución y Validacion)
     └── uni1a/
         ├── ContenidoAudiovisual.java (Interfaz Lógica Abastracta)
         ├── Subclases de Contenido (Pelicula, Documental, SerieDeTV, Cortometraje, VideoYoutube)
         └── Clases de Soporte (Actor, Temporada, Investigador)
-\`\`\`
+
 
 ### 2.2. Validaciones Arquitectónicas Clave
 
 | Clase de Contenido | Patrón de Asociación Implementado | Símbolo UML (Referencia) |
 | :--- | :--- | :--- |
-| **\`Pelicula\`** | Agregación con \`Actor\` (Débil) | Rombo Hueco ($\diamond$) |
-| **\`SerieDeTV\`** | Agregación con \`Temporada\` (Débil) | Rombo Hueco ($\diamond$) |
-| **\`Documental\`** | Composición con \`Investigador\` (Fuerte) | Rombo Sólido ($\blacklozenge$) |
+| **\`Pelicula\`** | Agregación con \`Actor\` (Débil) | Rombo Hueco |
+| **\`SerieDeTV\`** | Agregación con \`Temporada\` (Débil) | Rombo Hueco |
+| **\`Documental\`** | Composición con \`Investigador\` (Fuerte) | Rombo Sólido  |
 
 ***
 
@@ -52,7 +52,7 @@ Poo_unidad1/
 Ejecute el siguiente comando para replicar el repositorio localmente. Se asume que Git está configurado en el entorno de línea de comandos:
 
 \`\`\`bash
-git clone https://github.com/nohemice/Poo_unidad1.git
+git clone https://github.com/denissemosquera633-max/POO_U2.git
 cd Poo_unidad1
 \`\`\`
 
@@ -66,5 +66,3 @@ cd Poo_unidad1
 
 1.  Abra la clase **\`PruebaAudioVisual.java\`** (`src/poo/`).
 2.  Ejecute la clase. El sistema creará un **arreglo polimórfico** (`ContenidoAudiovisual[]`) y llamará al método `mostrarDetalles()` en cada elemento.
-
-La salida de la consola atestará la correcta implementación del **Polimorfismo**, mostrando los detalles únicos y específicos de cada tipo de contenido, incluyendo las relaciones de Agregación y Composición.
